@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Sandra Diaz">
+    <meta name="description" content="Portafolio de desarrollo web de Sandiaadiaz">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title> Sandiaa Diaz| Desarrollo Web Front-End</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/icono.png" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active"  href="#antes de empezar">Antes de empezar</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Glosario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Conceptos principales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/Diazz.png" alt="Foto de Sandia Diaz">
+        <h1>Hola, soy Sandra Diaz.</h1>
+        <h2>Estudiate de Ing. Mecanica y de Educación Preescolar. | Desarrollo sitios web, videos, análisis de Ing. y Proyectos de Educación Preescolar.</h2>
+
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid rounded-circle" src="imagenes/brainn.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <!--<section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h1 class="seccion-titulo">Conoce a Sandra Diaz</h1>
+        <p class="seccion-texto"> Soy estudiante de Educación Preescolar e Ingeniería Mecánica, el dia de hoy les mostraré un increible glosario de conceptos relacionados a la Neuroeducación.</p>
+      </div>
+    </section>-->
+
+    <!-- Experiencia -->
+    <section id="antes de empezar" class="antes de empezar seccion-clara"></section>
+    <section class="experiencia seccion-clara">
+      <h2 class="seccion-titulo">Antes de empezar</h2>
+      <h3 class="seccion-descripcion">Puedes ver los siguientes videos como introducción al glosario.</h3>
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-file-play-fill"></i>
+            <p class="experiencia-titulo">El Cerebro</p>
+            <a href="https://www.canva.com/design/DAFg2ZWXWzw/-dxMS2yKiu7uASF20nCZrw/watch?utm_content=DAFg2ZWXWzw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"> <img class="imagencerebro" src="imagenes/54.png"></a>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Cerebro</span>
+              <span class="badge text-bg-primary">Peso</span>
+              <span class="badge text-bg-primary">Organo</span>
+              <span class="badge text-bg-primary">Diencefalo</span>
+              <span class="badge text-bg-primary">Lobulos</span>
+              <span class="badge text-bg-primary">Sentidos</span>
+
+
+            </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-file-play-fill"></i>
+            <p class="experiencia-titulo">El sistema nervioso</p>
+            <a href="https://www.canva.com/design/DAFg58e15qU/LPWLW6JwgwhN7HGk3C1cNA/watch?utm_content=DAFg58e15qU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"> <img class="imagencerebro" src="imagenes/55.png"></a>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Estimulos</span>
+              <span class="badge text-bg-primary">Sistema Nervioso Central</span>
+              <span class="badge text-bg-primary">Sistema Nervioso Periferico</span>
+              <span class="badge text-bg-primary">Sistema Nervioso Somático</span>
+              <span class="badge text-bg-primary">Sistema Nervioso Autónomo</span>
+
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-file-play-fill"></i>
+            <p class="experiencia-titulo">Neuronas</p>
+            <a href="https://www.canva.com/design/DAFg5xd6mGA/UXkE2XjPbEQzhKVOK9QJcQ/watch?utm_content=DAFg5xd6mGA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"> <img class="imagencerebro" src="imagenes/56.png"></a>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Sinapsis</span>
+              <span class="badge text-bg-primary">Neuronas sensoriales</span>
+              <span class="badge text-bg-primary">Neuronas motoras</span>
+              <span class="badge text-bg-primary">Interneuronas</span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- Testimonios -->
+<section id="testimonios" class="testimonios seccion-clara">
+  
+  <h6 class="seccion-titulo texto-negro">Glosario</h6>
+  <h4 class="seccion-descripcion">Estos son algunos de los conceptos que he ido recabando a través del curso curricular de Neuroeducación con el profesor Aldo López en la Escuela Nacional para Maestras de Jardines de Niños.</h4>
+
+ <!-- Carrusel -->
+ <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item">
+      <div class="container">
+        <img class="testimonio-imagen rounded-circle" src="imagenes/53.svg" alt="Foto de Nora">
+        <p class="testimonio-texto">Ciencia que estudia la estructura y funcionamiento del sistema nervioso humano y cómo se relacionan sus diferentes elementos para crear y constituir la base biológica de la cognición, las emociones y la conducta. (Braidot et al., 2018, p.51) </p>
+        <div class="testimonio-info">
+          <p class="cliente">¿Qué es la Neurociencia?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="container">
+        <img class="testimonio-imagen rounded-circle" src="imagenes/53.svg" alt="Foto de Nora">
+        <p class="testimonio-texto">Es la ciencia que se encarga de estudiar la estructura y funcionamiento del sistema nervioso, así como de la relación con diferentes elementos para la creación de la base biología de la cognición de emociones y de la conducta. Entre sus principales funciones está el análisis de la estructura y el funcionamiento de las neuronas y las células gliales, la influencia de los genes en el desarrollo y morfología cerebral, también se encarga de observar la sinapsis y creación de redes neuronales.</p>
+        <div class="testimonio-info">
+          <p class="cliente">¿Qué es la Neurociencia para mí?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item active">
+      <div class="container">
+        <img class="testimonio-imagen rounded-circle" src="imagenes/53.svg" alt="Foto de Gino">
+        <p class="testimonio-texto">La construcción cerebral de la realidad a partir de la percepción y el  procesamiento de la información. / Los mecanismos neurobiológicos responsables de la cognición: por ejemplo, los relacionados con la atención, la memoria, el aprendizaje, la creatividad, la motivación... Los mecanismos neurobiológicos que subyacen a las emociones.  </p>
+        <div class="testimonio-info">
+          <p class="cliente">La neurociencia estudia principalmente todos estos temas:</p>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="carousel-item">
+      <div class="container">
+        <img class="testimonio-imagen rounded-circle" src="imagenes/53.svg" alt="Foto de Leonardo">
+        <p class="testimonio-texto">La estructura y el funcionamiento de las células cerebrales: neuronas y glía. / La influencia de los genes en el desarrollo y la morfología cerebral. / La comunicación entre neuronas (sinapsis) y la creación de redes neuronales. Las características y el papel que desempeñan los mediadores químicos en las sinapsis: los neurotransmisores. </p>
+        
+        <div class="testimonio-info">
+          <p class="cliente">La neurociencia estudia principalmente todos estos temas:</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+</section>
+
+   <!-- Proyectos -->
+<section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/Brain.svg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Cerebro</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.canva.com/design/DAFllvVYvuo/0TZoGhFFqyqzt9cnXycdvA/watch?utm_content=DAFllvVYvuo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-eyeglasses"></i>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=qvvGs5lfWCA" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-file-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/2.svg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Sistema Nervioso Central</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.canva.com/design/DAFlnAgitac/BOpBa81rG7y180aaXx8iKA/watch?utm_content=DAFlnAgitac&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-eyeglasses"></i>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=w4DJql_xJNo" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-file-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/3.svg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Sistema Nervioso periferico</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.canva.com/design/DAFlnK01g0E/yGTYcqpLZKtYmWMxSIEdfA/watch?utm_content=DAFlnK01g0E&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-eyeglasses"></i>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=_WRH9HGMOGo" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-file-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/4.svg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Sistema Nervioso Periferico Somatico</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.canva.com/design/DAFlnDKmGbM/7ghtOU8nVoyD9rMA3BXAmw/watch?utm_content=DAFlnDKmGbM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-eyeglasses"></i>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=4s5bGWnLkAE" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-file-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/5.svg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Sistema Nervioso Periferico Autonomo</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.canva.com/design/DAFlnMI-O5M/wX-fAEXGp-GMuXsom_pyZw/watch?utm_content=DAFlnMI-O5M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-eyeglasses"></i>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=3reuWDK70Gw" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-file-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/52.svg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Cerebelo</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.canva.com/design/DAFluoOTZrA/GWR9T7FH-cmb6ul-jeRETA/watch?utm_content=DAFluoOTZrA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-eyeglasses"></i>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=wcYNI7PzVqw" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-file-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+
+          <!-- Proyecto 7 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/7.svg" alt="Proyecto 7">
+              <div class="overlay">
+                <p>Sistema limbico</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.canva.com/design/DAFlnDNk270/nY7iqHVBZMRcfSkQbV3kjg/watch?utm_content=DAFlnDNk270&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-eyeglasses"></i>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=JrzkHMOdoUM" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-file-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 8 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/8.svg" alt="Proyecto 8">
+              <div class="overlay">
+                <p>Emoción</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.canva.com/design/DAFlnLgyYzM/DXRUpda-FPMZFgV4OWgVJA/watch?utm_content=DAFlnLgyYzM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-eyeglasses"></i>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=hP7hDPP1Dz0" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-file-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 9 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/9.svg" alt="Proyecto 9">
+              <div class="overlay">
+                <p>Procesos Fisiologicos</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.canva.com/design/DAFlnGsf-k8/uSrC7gERrVIaFYNGPSIlkw/watch?utm_content=DAFlnGsf-k8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-eyeglasses"></i>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=5qnVU0Twohw" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-file-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 10 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/10.svg" alt="Proyecto 10">
+              <div class="overlay">
+                <p>Procesos cognitivos</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.canva.com/design/DAFlnED93z0/F4DbCd4NJ8PARnGI_vfmQw/watch?utm_content=DAFlnED93z0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-eyeglasses"></i>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=rskYDEnO0_Y" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-file-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 11 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/11.svg" alt="Proyecto 11">
+              <div class="overlay">
+                <p>Procesos conductuales</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.canva.com/design/DAFlnWVRBQI/eWmpxH_PFtGQj-ou62uuSQ/watch?utm_content=DAFlnWVRBQI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-eyeglasses"></i>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=80UgwHZ5dXc" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-file-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 12 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/12.svg" alt="Proyecto 12">
+              <div class="overlay">
+                <p>Emociones primarias</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.canva.com/design/DAFlnVdg1C0/nFeDl5Up4GH4cf8bXIvDWg/watch?utm_content=DAFlnVdg1C0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-eyeglasses"></i>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=KsThEXZS9wI" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-file-play-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+  <div class="container text-center proyectos-contenedor">
+    <div class="row">
+      <!-- Proyecto 13 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/13.svg" alt="Proyecto 13">
+          <div class="overlay">
+            <p>Ira</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFlndJseO8/kIg8poLgiSKfBl8O9_NFRw/watch?utm_content=DAFlndJseO8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=6dRVVDtkctw" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 14 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/14.svg" alt="Proyecto 1">
+          <div class="overlay">
+            <p>Miedo</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFlnWLhsLY/Oc76s1sm5susWcOGPTZNqA/watch?utm_content=DAFlnWLhsLY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=6TE3C087TYs" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 15 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/15.svg" alt="Proyecto 15">
+          <div class="overlay">
+            <p>Alegria</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFlnfK5Mc8/Qo4ubzqFtmKLYpdbpHerNw/watch?utm_content=DAFlnfK5Mc8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=hyetfmz3gcM" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 16 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/16.svg" alt="Proyecto 16">
+          <div class="overlay">
+            <p>Sorpresa</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFlnVIGhdg/YMa1dqrdAhk2El8WleZ-lA/watch?utm_content=DAFlnVIGhdg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=ZftzAFeazHI" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 17 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/17.svg" alt="Proyecto 17">
+          <div class="overlay">
+            <p>Asco</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFlnUtbpvM/gS-DP7Uakj_bRGa7Y_KfUA/watch?utm_content=DAFlnUtbpvM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=wcV3ZrxclQY" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 18 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/18.svg" alt="Proyecto 18">
+          <div class="overlay">
+            <p>Tristeza</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFlnWVN72k/D6wCuFzVgQI71TLFOCpEGw/watch?utm_content=DAFlnWVN72k&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=lRIMV4TI1yo" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container text-center proyectos-contenedor">
+    <div class="row">
+
+      <!-- Proyecto 19 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/19.svg" alt="Proyecto 19">
+          <div class="overlay">
+            <p>Emociones secundarias</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFlnb58fkI/e2DnX4JgpPY4Kv0lQs5ssA/watch?utm_content=DAFlnb58fkI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=oBK1aHFNkcg" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 20 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/20.svg" alt="Proyecto 20">
+          <div class="overlay">
+            <p>Emociones en segundo plano</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFlnRr1uX4/kzpnMSDrKnQV3hEzX4T8wg/watch?utm_content=DAFlnRr1uX4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=xeCtzVP-gSY" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 21 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/21.svg" alt="Proyecto 21">
+          <div class="overlay">
+            <p>¿Cómo afectan las emociones al aprendizaje?</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFlnVwoBZQ/yNRYUQk7iJjJiW7vlvxKnw/watch?utm_content=DAFlnVwoBZQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=r1MJIhLtggk" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 22 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/22.svg" alt="Proyecto 22">
+          <div class="overlay">
+            <p>Emociones y estados emocionales que ayudan a aprender</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFls3vZXcU/efhFgVa5qkcxxiPRHYNUHA/watch?utm_content=DAFls3vZXcU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=ayN3o6K6XA8" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 23 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/23.svg" alt="Proyecto 23">
+          <div class="overlay">
+            <p>Confianza</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltDIsvcQ/fCBpBC2P8pn1KkERGuKMKg/watch?utm_content=DAFltDIsvcQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=UMo64z3brqo&list=PLXedZ3ERnxbniSFFIhtWVYO4Fhgo33zbx&index=9" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 24 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/24.svg" alt="Proyecto 24">
+          <div class="overlay">
+            <p>Neuroplasticidad</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltEAcyyk/xTj8HQ8o-V4JRaU_fE7w-w/watch?utm_content=DAFltEAcyyk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=VSfpA3AEKmY" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container text-center proyectos-contenedor">
+    <div class="row">
+
+      <!-- Proyecto 25 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/25.svg" alt="Proyecto 25">
+          <div class="overlay">
+            <p>Curiosidad</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltN2Og8U/IwtMOA2VS2IMqFevIwh_1w/watch?utm_content=DAFltN2Og8U&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=BXBtlY2cYF4" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 26 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/26.svg" alt="Proyecto 26">
+          <div class="overlay">
+            <p>Autocontrol</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltFrl-NE/wrGgfvKg-PRvLJBRyMV-fQ/watch?utm_content=DAFltFrl-NE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=4LsHUXOGO3g" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto  27 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/27.svg" alt="Proyecto 27">
+          <div class="overlay">
+            <p>Relacion</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltKSiOcI/lRpe4azYlHiAuKmvmOTrfQ/watch?utm_content=DAFltKSiOcI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=OgCRdTxCEic" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 28 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/28.svg" alt="Proyecto 28">
+          <div class="overlay">
+            <p>Capacidad de comunicación</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltGMDZX0/-0J6_s9-DEE3VUDg5XuMPA/watch?utm_content=DAFltGMDZX0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=GDMfhGe2VY0" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 29 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/29.svg" alt="Proyecto 29">
+          <div class="overlay">
+            <p>Cooperación</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltMHMsBs/7sUuYVY9vuVx1F532_KRzw/watch?utm_content=DAFltMHMsBs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=5pUmAOTQqCg" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 30 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/30.svg" alt="Proyecto 30">
+          <div class="overlay">
+            <p>Autorregulación</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltM6Ytj0/R4Mue26lmCS0s8lYjxHduQ/watch?utm_content=DAFltM6Ytj0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=O5-hFF3nri8" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="container text-center proyectos-contenedor">
+    <div class="row">
+
+      <!-- Proyecto 31 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/31.svg" alt="Proyecto 31">
+          <div class="overlay">
+            <p>Amigdala</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltPzKCjw/cHgsWbv59Cd03zsHbTRkdA/watch?utm_content=DAFltPzKCjw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=7zG8c0fe_Z4" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 32 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/32.svg" alt="Proyecto 32">
+          <div class="overlay">
+            <p>Hipocampo</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltM7l34c/PEZq952TvCuE6txhLjpNpw/watch?utm_content=DAFltM7l34c&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=JzeI1LVh0Es" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 33 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/33.svg" alt="Proyecto 33">
+          <div class="overlay">
+            <p>Cortisol</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltP-FJvo/EILp1veXUeouAFtefZQrrA/watch?utm_content=DAFltP-FJvo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=uxH5jLEKotQ" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 34 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/34.svg" alt="Proyecto 34">
+          <div class="overlay">
+            <p>Talamo</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltNqN5Kw/13ldogart1hiy2FlhNXE1g/watch?utm_content=DAFltNqN5Kw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=85gKElKSR-U" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 35 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/35.svg" alt="Proyecto 35">
+          <div class="overlay">
+            <p>Hipotalamo</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltEPxqG4/pORTRugSt-s996GAa81rPw/watch?utm_content=DAFltEPxqG4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=pMmdgB8ZLpQ" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 36 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/36.svg" alt="Proyecto 36">
+          <div class="overlay">
+            <p>Neurona</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltLgKVqQ/ERwksUQZgvH7gE161lQt5g/watch?utm_content=DAFltLgKVqQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://youtube.com/playlist?list=PL1Ctg5IuSfZtvlK1KbDyALNvKTyUzJfBg" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <div class="container text-center proyectos-contenedor">
+    <div class="row">
+
+      <!-- Proyecto 37 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/37.svg" alt="Proyecto 37">
+          <div class="overlay">
+            <p>Celulas gliales</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltC_mFLE/3FyowYRypFomepttCanwvQ/watch?utm_content=DAFltC_mFLE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=xvHIxnfHdcA" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 38 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/38.svg" alt="Proyecto 38">
+          <div class="overlay">
+            <p>Poda Neuronal</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltIgPbJw/we9zrJyxMrytXyYBanu8IQ/watch?utm_content=DAFltIgPbJw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=K1KBndHsD0o" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 39 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/39.svg" alt="Proyecto 39">
+          <div class="overlay">
+            <p>Sinapsis</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltGRUORM/EYC5utZ2ceqmS-1pA66ePA/watch?utm_content=DAFltGRUORM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=g291rK3NEws" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 40 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/40.svg" alt="Proyecto 40">
+          <div class="overlay">
+            <p>Neurotransmisores</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltCDt_QQ/6vFjW_DEg_QTWg0Tf1tiPw/watch?utm_content=DAFltCDt_QQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=qkYCGALqS-E" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 41 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/41.svg" alt="Proyecto 41">
+          <div class="overlay">
+            <p>Acetilcolina</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltJnM4c0/Ms6CuIIuqNueJnDwSjJ8lQ/watch?utm_content=DAFltJnM4c0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=fCPSfC1J_2w" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 42 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/42.svg" alt="Proyecto 42">
+          <div class="overlay">
+            <p>Dopamina</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltGlVrB8/BaEcX3CMnHe1GBcU7K7s-A/watch?utm_content=DAFltGlVrB8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=z4KeSF9rOeQ" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-center proyectos-contenedor">
+    <div class="row">
+
+      <!-- Proyecto 43 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/43.svg" alt="Proyecto 43">
+          <div class="overlay">
+            <p>Noradrenalina</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltLQc6L0/shkI5a2wr77S0H9yDgzv_A/watch?utm_content=DAFltLQc6L0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=iJy8HwyrOtI" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 44 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/44.svg" alt="Proyecto 44">
+          <div class="overlay">
+            <p>Serotonina</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFltI7ObAk/OB0_XHwG_l3rhe5XBRwBrQ/watch?utm_content=DAFltI7ObAk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=DO97jsxPjD4" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 45 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/45.svg" alt="Proyecto 45">
+          <div class="overlay">
+            <p>Adrenalina</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFlus-DEX4/82d7Wa1GN7TzSLocYsIQBA/watch?utm_content=DAFlus-DEX4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=hzVsCsD2ERQ" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 46 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/46.svg" alt="Proyecto 46">
+          <div class="overlay">
+            <p>Cerebro reptiliano</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFlukrbLCA/FvkNZPgC7YCsb_lL4OWyBg/watch?utm_content=DAFlukrbLCA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=z7dMcBLSobo" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 47 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/47.svg" alt="Proyecto 47">
+          <div class="overlay">
+            <p>Cerebro mamifero</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFluvynIMQ/9O79zBgm-Kxx9UTKDNJxow/watch?utm_content=DAFluvynIMQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=ih9_X45C6CQ" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 48 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/48.svg" alt="Proyecto 48">
+          <div class="overlay">
+            <p>Lobulo occipital</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFlumxYDj8/NfrFOuPHp_7KnqSeZFTkmA/watch?utm_content=DAFlumxYDj8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=PU5pF_N2RZA" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container text-center proyectos-contenedor">
+    <div class="row">
+
+      <!-- Proyecto 49 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/49.svg" alt="Proyecto 49">
+          <div class="overlay">
+            <p>lobulo frontal</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFlu25h-dk/XdadPhHpgVphyu2acFa1hw/watch?utm_content=DAFlu25h-dk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=r5M018pEkL4" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 50 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/50.svg" alt="Proyecto 50">
+          <div class="overlay">
+            <p>Lobulo parietal</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFluxjFOwc/ldtwi-0vIC6FhFGZJLaG1w/watch?utm_content=DAFluxjFOwc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=biRG2Elr4WA" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Proyecto 51 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <img src="imagenes/51.svg" alt="Proyecto 51">
+          <div class="overlay">
+            <p>Lobulo temporal</p>
+            <div class="iconos-contenedor">
+              <a href="https://www.canva.com/design/DAFlu8RRILs/AoZR3w3T6ilXpKl3JIbIBQ/watch?utm_content=DAFlu8RRILs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-eyeglasses"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=7BicRFMLvfk" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-file-play-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- Botonnnn --> 
+
+      <a href="https://www.canva.com/design/DAFSDUoRj2o/zzwumyZoEbj5OVZ3pcRd5w/watch?utm_content=DAFSDUoRj2o&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más conceptos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Articulos -->
+    <section class="articulos justify-content-start">
+      <h2 class="seccion-titulo texto-negro">+ Conceptos</h2>
+      <div class="card">
+        <div class="card-header">
+          Más recientes
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="https://sites.google.com/view/germinal-sandia/p%C3%A1gina-principal?authuser=0" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Desarrollo prenatal
+            </li>
+          </a>
+          <a href="https://sites.google.com/view/conductualmente/p%C3%A1gina-principal" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Teorías de aprendizaje
+            </li>
+        </ul>
+      </div>
+      
+      <a href="https://beacons.ai/diazzsand" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más artículos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para aprender más.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:sandradanieladiazmartinez@gmail.com">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sandra-daniela-d%C3%ADaz-mart%C3%ADnez-886596265/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/sandraddiaz.mtz/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:sandradanieladiazmartinez@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Sandra Daniela Diaz Martinez (2023) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+
+  </body>
+</html>
