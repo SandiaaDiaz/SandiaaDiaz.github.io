@@ -22,6 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <!-- Barra de navegacion -->
     <nav class="navbar navbar-expand-md navbar-light">
@@ -30,12 +31,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-toggler">
-          <a class="navbar-brand" href="#">
-            <img src="imagenes/icono.png" width="50" alt="Logo de la página web">
-          </a>
+          <a class="navbar-brand" href="#"> <h1>Sandra Diaz </h1> </a>
           <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item">
-              <a class="nav-link active"  href="#antes de empezar">Antes de empezar</a>
+              <a class="nav-link "  href="#antes de empezar">Antes de empezar</a>
             </li> 
             <li class="nav-item">
               <a class="nav-link" href="#testimonios">Glosario</a>
@@ -51,28 +50,34 @@
       </div>
     </nav>
 
+
     <!-- Seccion Hero -->
     <section class="hero align-items-stretch">
       <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/Diazz.png" alt="Foto de Sandia Diaz">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/Sandria.jpeg" alt="Foto de Sandia Diaz">
         <h1>Hola, soy Sandra Diaz.</h1>
-        <h2>Estudiate de Ing. Mecanica y de Educación Preescolar. | Desarrollo sitios web, videos, análisis de Ing. y Proyectos de Educación Preescolar.</h2>
-
         <!--Animación con JavaScript-->
         <h2 class="text-primary mb-4" id="typewriter"></h2>
       </div>
-      <div class="hero-inferior">
+    </section>
+     <!-- <div class="hero-inferior">
         <img class="hero-inferior-imagen img-fluid rounded-circle" src="imagenes/brainn.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      </div>-->
+  
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi">
+      <div class="imagen" data-aos="fade-right"></div>
+      <div class="contenedor" data-aos="fade-left">
+        <h2 class="seccion-titulo">Acerca de mí</h2>
+        <p class="seccion-texto">Actualmente soy estudiante de Ingenieria Mecanica y de Educación Preescolar. | Desarrollo sitios web, videos, análisis de Ingenieria y Proyectos de Educación Preescolar.</p>
       </div>
     </section>
 
-    <!-- Sobre mi -->
-    <!--<section id="sobre-mi" class="sobre-mi seccion-oscura">
-      <div class="contenedor">
-        <h1 class="seccion-titulo">Conoce a Sandra Diaz</h1>
-        <p class="seccion-texto"> Soy estudiante de Educación Preescolar e Ingeniería Mecánica, el dia de hoy les mostraré un increible glosario de conceptos relacionados a la Neuroeducación.</p>
-      </div>
-    </section>-->
+    <div class="frase" data-aos="fade-up">
+      <h2>Página creada con ayuda de Bootcamp TCPRO e Inteligencia Artificial.</h2>
+     
+    </div>
 
     <!-- Experiencia -->
     <section id="antes de empezar" class="antes de empezar seccion-clara"></section>
@@ -1190,6 +1195,34 @@
     
     <!-- Pie de pagina (footer) -->
     <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+          <!--HABILIDADES-->
+          <section class="habilidades_contenedor">
+            <h2 class="seccion-titulo">HERRAMIENTAS</h2>
+            <div class="habilidades">
+              <h3>CÓDIGO </h3>
+                <ul id="iconos_software" data-aos="fade-right">
+                  <li> <span> <img src="imagenes/icons/html5.png" alt=""> </span> <p>HTML5</p></li>
+                  <li> <span> <img src="imagenes/icons/css3.png" alt=""> </span><p>CSS3</p></li>
+                  <li> <span> <img src="imagenes/icons/github.png" alt=""> </span> <p>GITHUB</p></li>
+                  <li> <span><img src="imagenes/icons/code-int.jpg" alt=""> </span> <p>CODE.ORG</p></li>
+                </ul>
+              <h3>INTELIGENCIA ARTIFICIAL</h3>
+                <ul data-aos="fade-left">
+                  <ul id="iconos_software" data-aos="fade-right">
+                    <li> <span> <img src="imagenes/icons/chatgpt.jpeg" alt=""> </span> <p>CHATGPT</p></li>
+                    <li> <span> <img src="imagenes/icons/colormind.png" alt=""> </span><p>COLORMIND</p></li>
+                    <li> <span> <img src="imagenes/icons/You.com_Logo.svg.png" alt=""> </span> <p>YOU.COM</p></li>
+                    <li> <span> <img src="imagenes/icons/code-int.jpg" alt=""> </span> <p>CODE.ORG</p></li>
+                    <li> <span><img src="imagenes/icons/bing.jpeg" alt=""> </span> <p>M BING</p></li>
+                    <li> <span><img src="imagenes/icons/bard.png" alt=""> </span> <p>BARD</p></li>
+                    <li> <span><img src="imagenes/icons/canva-icon.webp" alt=""> </span> <p>CANVA</p></li>
+                    <li> <span><img src="imagenes/icons/SUMMARIZE.png" alt=""> </span> <p>SUMMARIZE</p></li>
+
+
+                  </ul>
+      
+            </section>
+
       <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
       <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
       <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
